@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fb">
+  <title>Overview · ShadowFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  
+</head>
+
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="dashboard.html"><span
+          class="brand-mark"><i></i><i></i><i></i><i></i></span><span>shadow<span
+            class="brand-light">flow</span></span></a>
+      <div class="workspace-switch">
+        <div class="workspace-avatar">N</div>
+        <div class="workspace-copy"><b>Northstar College</b><small>Workspace</small></div><span class="chevron">⌄</span>
+      </div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="nav-list">
+        <a class="nav-link active" href="dashboard.html"><span
+            class="nav-icon">▦</span>Overview</a>
+        <a class="nav-link " href="record.html"><span
+            class="nav-icon">◎</span>Record a task</a>
+        <a class="nav-link " href="workflow_builder.html"><span
+            class="nav-icon">⌘</span>Workflows</a>
+        <a class="nav-link " href="execution.html"><span
+            class="nav-icon">▷</span>Executions</a>
+        <a class="nav-link " href="history.html"><span
+            class="nav-icon">◷</span>History</a>
+      </nav>
+      <div class="nav-label nav-label-spaced">MANAGE</div>
+      <a class="nav-link" href="review.html"><span class="nav-icon">☷</span>Review queue<span
+          class="nav-count">3</span></a>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-spark">✳</span><b>Need a hand?</b>
+          <p>Learn how to build your first workflow.</p><a href="workflow_builder.html">Explore the guide
+            <span>↗</span></a>
+        </div>
+        <div class="profile">
+          <div class="profile-avatar">DK</div>
+          <div class="profile-info"><b>Dhinesh Kumar</b><small>Administrator</small></div><span class="dots">···</span>
+        </div>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">☰</button>
+        <div class="breadcrumbs"><span>Workspace</span><span class="crumb-slash">/</span><b>Overview</b></div>
+        <div class="top-actions"><span class="environment"><i></i> Demo environment</span><button class="icon-button"
+            aria-label="Notifications">♧<b class="notification-dot"></b></button>
+          <div class="top-avatar">DK</div>
+        </div>
+      </header>
+      <div class="page-content">
+<section class="welcome-row">
+  <div>
+    <div class="eyebrow"><span class="eyebrow-line"></span> MONDAY, NOVEMBER 9</div>
+    <h1>Good morning, Dhinesh <span class="wave">✳</span></h1>
+    <p class="page-subtitle">Your work is moving along nicely. Here’s the latest across your workspace.</p>
+  </div><a class="button button-dark" href="record.html"><span>＋</span> Record a task</a>
+</section>
+<section class="hero-video reveal-on-scroll" data-parallax>
+  <div class="hero-grain"></div>
+  <div class="hero-orbit orbit-one"></div>
+  <div class="hero-orbit orbit-two"></div>
+  <div class="hero-content">
+    <div class="hero-kicker"><span class="live-dot"></span> YOUR WORK, IN MOTION</div>
+    <h2>Show it once.<br><span>Let it flow.</span></h2>
+    <p>Turn the busywork you already know into workflows that take care of themselves.</p><a
+      href="record.html" class="hero-link">See how it works <span>↗</span></a>
+  </div>
+  <div class="hero-stage" aria-label="Animated workflow preview">
+    <div class="stage-glow"></div>
+    <div class="floating-chip chip-source"><span class="mini-sheet">▤</span><span><b>Applications.csv</b><small>24
+          records · just now</small></span><i class="chip-check">✓</i></div>
+    <div class="stage-track"><span></span><span></span><span></span></div>
+    <div class="workflow-card">
+      <div class="wf-card-head"><span class="wf-icon">✳</span><span><b>Student intake</b><small>Automated
+            workflow</small></span><span class="wf-menu">···</span></div>
+      <div class="wf-step"><span class="step-icon step-ai">✦</span><span><b>Read application</b><small>Identify key
+            details</small></span><span class="step-done">✓</span></div>
+      <div class="wf-branch"><i></i>
+        <div><b>Department</b><small>CSE <span>→</span> Engineering</small><small>ECE <span>→</span> Electronics</small>
+        </div>
+      </div>
+      <div class="wf-step"><span class="step-icon step-check">✓</span><span><b>Update student record</b><small>Portal ·
+            demo mode</small></span><span class="step-done">✓</span></div>
+      <div class="wf-progress"><span></span></div>
+      <div class="wf-running"><i></i> Running safely <b>18 / 24</b></div>
+    </div>
+    <div class="floating-chip chip-success"><span class="success-round">✓</span><span><b>18 records complete</b><small>6
+          need a quick look</small></span><span class="chip-arrow">↗</span></div>
+    <div class="stage-caption"><span class="caption-line"></span> ONE DEMO. A WORKFLOW THAT GETS IT.</div>
+  </div>
+  <div class="hero-bottom"><span><i></i> Everything runs in your demo environment</span><span>SCROLL TO EXPLORE
+      <b>↓</b></span></div>
+</section>
+<section class="metrics-grid reveal-on-scroll">
+  <article class="metric-card">
+    <div class="metric-top"><span>WORKFLOWS</span><span class="metric-icon violet">⌘</span></div>
+    <div class="metric-value">08 <span class="metric-change">↗ 2 this month</span></div>
+    <div class="metric-foot"><span>Across your workspace</span><span class="sparkline">▁▂▂▄▃▅▄▆</span></div>
+  </article>
+  <article class="metric-card">
+    <div class="metric-top"><span>RECORDS PROCESSED</span><span class="metric-icon mint">↗</span></div>
+    <div class="metric-value">1,284 <span class="metric-change green">↑ 12.8%</span></div>
+    <div class="metric-foot"><span>Compared to last month</span><span class="sparkline mint-line">▁▂▃▂▄▅▆▇</span></div>
+  </article>
+  <article class="metric-card">
+    <div class="metric-top"><span>TIME SAVED</span><span class="metric-icon peach">◷</span></div>
+    <div class="metric-value">32.5 <small>hrs</small><span class="metric-change">↗ 4.2 hrs</span></div>
+    <div class="metric-foot"><span>Across all automations</span><span class="sparkline peach-line">▁▁▂▃▃▅▆▇</span></div>
+  </article>
+  <article class="metric-card">
+    <div class="metric-top"><span>NEEDS YOUR REVIEW</span><span class="metric-icon yellow">☷</span></div>
+    <div class="metric-value">02 <a class="metric-review-link" href="review.html">View queue ↗</a></div>
+    <div class="metric-foot"><span>Waiting for a human decision</span><span class="review-bars"><i></i><i></i></span>
+    </div>
+  </article>
+</section>
+<section class="section-block reveal-on-scroll">
+  <div class="section-heading">
+    <div>
+      <div class="eyebrow">KEEP THINGS MOVING</div>
+      <h2>Pick up where you left off</h2>
+    </div><a class="text-link" href="workflow_builder.html">All workflows <span>→</span></a>
+  </div>
+  <div class="workflow-tiles"><a class="workflow-tile" href="workflow_builder.html">
+      <div class="tile-icon tile-purple">▤</div>
+      <div class="tile-copy">
+        <div class="tile-title">Student application intake <span class="tiny-status on">● Active</span></div>
+        <p>Routes applications and updates student records.</p>
+        <div class="tile-meta"><span>Last run 12 min ago</span><span>24 records <b>·</b> 88% success</span></div>
+      </div>
+      <div class="tile-action">↗</div>
+    </a><a class="workflow-tile" href="workflow_builder.html">
+      <div class="tile-icon tile-coral">◉</div>
+      <div class="tile-copy">
+        <div class="tile-title">Applicant status updates <span class="tiny-status on">● Active</span></div>
+        <p>Keeps applicants in the loop when status changes.</p>
+        <div class="tile-meta"><span>Last run yesterday</span><span>18 records <b>·</b> 100% success</span></div>
+      </div>
+      <div class="tile-action">↗</div>
+    </a><a class="workflow-tile" href="workflow_builder.html">
+      <div class="tile-icon tile-green">✉</div>
+      <div class="tile-copy">
+        <div class="tile-title">Missing document follow-up <span class="tiny-status draft">● Draft</span></div>
+        <p>Finds incomplete files and prepares a follow-up.</p>
+        <div class="tile-meta"><span>Created Nov 6</span><span>Draft · 4 steps</span></div>
+      </div>
+      <div class="tile-action">↗</div>
+    </a></div>
+</section>
+<section class="section-block dashboard-bottom reveal-on-scroll">
+  <div class="section-heading">
+    <div>
+      <div class="eyebrow">A QUICK PULSE</div>
+      <h2>Recent activity</h2>
+    </div><a class="text-link" href="history.html">View history <span>→</span></a>
+  </div>
+  <div class="activity-card">
+    <div class="activity-row"><span class="activity-icon activity-done">✓</span>
+      <div class="activity-copy"><b>Student application intake</b><span>Batch run completed · 21 records
+          processed</span></div><span class="activity-time">12 minutes ago</span><span
+        class="activity-result result-good">21 done</span><a href="execution.html"
+        class="activity-arrow">↗</a>
+    </div>
+    <div class="activity-row"><span class="activity-icon activity-review">!</span>
+      <div class="activity-copy"><b>Review needed on 2 records</b><span>Missing email and an unmatched student
+          profile</span></div><span class="activity-time">14 minutes ago</span><span
+        class="activity-result result-review">Needs review</span><a href="review.html"
+        class="activity-arrow">↗</a>
+    </div>
+    <div class="activity-row"><span class="activity-icon activity-new">✦</span>
+      <div class="activity-copy"><b>New workflow created</b><span>Missing document follow-up · Draft saved</span></div>
+      <span class="activity-time">Yesterday</span><span class="activity-result result-neutral">Draft</span><a
+        href="workflow_builder.html" class="activity-arrow">↗</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer"><span>© 2026
+            ShadowFlow</span><span><i class="status-pulse"></i> All systems operational</span><span>Built for work that
+            flows.</span></footer>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="js/app.js"></script>
+  
+</body>
+
+</html>

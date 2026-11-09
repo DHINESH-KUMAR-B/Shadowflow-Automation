@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11121d">
+  <title>Meet ShadowFlow · Work, in motion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/intro.css">
+</head>
+
+<body>
+  <header class="intro-nav"><a class="intro-brand" href="/templates/index.html"><span
+        class="brand-mark"><i></i><i></i><i></i><i></i></span>shadow<span>flow</span></a>
+    <nav><a href="#how-it-works">How it works</a><a href="#built-for-people">Built for people</a></nav><a
+      class="nav-cta" href="/templates/dashboard.html">Open workspace <span>↗</span></a>
+  </header>
+  <main>
+    <section class="intro-hero">
+      <div class="hero-halo"></div>
+      <div class="hero-copy">
+        <div class="hero-eyebrow"><i></i> INTRODUCING SHADOWFLOW</div>
+        <h1>Work once.<br><span>Teach forever.</span></h1>
+        <p>Show ShadowFlow how a task gets done. It turns your steps into a workflow your team can review, reuse, and
+          trust.</p>
+        <div class="hero-ctas"><a class="primary-cta" href="#how-it-works">Watch the workflow <span>↓</span></a><a
+            class="secondary-cta" href="/templates/dashboard.html">Explore the workspace <span>↗</span></a>
+        </div>
+        <div class="hero-footnote"><span class="footnote-check">✓</span> You stay in control at every step</div>
+      </div>
+      <div class="hero-visual" aria-label="Animated preview of a task becoming an automation">
+        <div class="visual-orbit"></div>
+        <div class="visual-orbit orbit-inner"></div>
+        <div class="hero-window">
+          <div class="window-bar"><span><i></i><i></i><i></i></span><small>ShadowFlow · task preview</small><span
+              class="window-lock">DEMO MODE</span></div>
+          <div class="window-inner">
+            <div class="window-sidebar"><b>Student portal</b><span
+                class="side-active"></span><span></span><span></span><span></span></div>
+            <div class="window-screen">
+              <div class="window-greeting">Good morning, Admin <i>✳</i></div>
+              <div class="window-sub">APPLICATIONS OVERVIEW</div>
+              <div class="window-metrics"><span><small>NEW APPLICATIONS</small><b>24</b></span><span><small>IN
+                    REVIEW</small><b>08</b></span><span><small>COMPLETE</small><b>16</b></span></div>
+              <div class="window-table">
+                <div><b>STUDENT</b><b>DEPARTMENT</b><b>STATUS</b></div>
+                <div><span>Aarav Mehta</span><span>CSE</span><i>Received</i></div>
+                <div><span>Priya Sharma</span><span>ECE</span><i>Received</i></div>
+                <div><span>Kabir Rao</span><span>CSE</span><i>Received</i></div>
+              </div>
+              <div class="window-action">Update application <span>→</span></div>
+            </div>
+          </div>
+          <div class="cursor-pointer"><span></span></div>
+        </div>
+        <div class="float-note note-observe"><span class="note-icon observe-icon">◎</span><span><b>Task
+              observed</b><small>Actions captured safely</small></span><i>✓</i></div>
+        <div class="float-note note-learn"><span class="note-icon learn-icon">✦</span><span><b>Pattern
+              understood</b><small>Department routing found</small></span></div>
+        <div class="hero-loop"><span></span> A BETTER WAY THROUGH BUSYWORK</div>
+      </div>
+      <a class="scroll-cue" href="#how-it-works"><span class="scroll-mouse"><i></i></span><span>SCROLL TO SEE IT IN
+          ACTION</span><b>↓</b></a>
+    </section>
+    <section class="story-section" id="how-it-works">
+      <div class="story-heading">
+        <div class="section-eyebrow"><i></i> FROM DEMO TO DONE</div>
+        <h2>One task. A whole lot<br>less busywork.</h2>
+        <p>Scroll through the transformation. Each step is shaped by the person who knows the work best: you.</p>
+      </div>
+      <div class="story-layout">
+        <div class="story-steps">
+          <article class="story-step active" data-step="0"><span class="story-number">01 / 04</span>
+            <h3>Show how it’s done.</h3>
+            <p>Carry out one typical task in a clearly marked demo environment. ShadowFlow observes the steps you choose
+              to show.</p><span class="step-tag"><i></i> OBSERVE</span>
+          </article>
+          <article class="story-step" data-step="1"><span class="story-number">02 / 04</span>
+            <h3>Make the pattern clear.</h3>
+            <p>AI turns your demonstration into a readable sequence and suggests the inputs, checks, and decisions
+              behind it.</p><span class="step-tag"><i></i> UNDERSTAND</span>
+          </article>
+          <article class="story-step" data-step="2"><span class="story-number">03 / 04</span>
+            <h3>Review before it runs.</h3>
+            <p>See every step, adjust the rules, and approve the workflow yourself. Unclear cases can pause for a human
+              decision.</p><span class="step-tag"><i></i> REVIEW</span>
+          </article>
+          <article class="story-step" data-step="3"><span class="story-number">04 / 04</span>
+            <h3>Let the routine flow.</h3>
+            <p>Run the approved workflow on a batch of records. Follow progress and see what completed, paused, or needs
+              attention.</p><span class="step-tag"><i></i> AUTOMATE</span>
+          </article>
+        </div>
+        <div class="video-sticky">
+          <div class="video-frame"><canvas id="workflowVideo" width="1920" height="1080"
+              aria-label="Scroll animated demonstration of a workflow"></canvas>
+            <div class="video-controls"><span class="video-play">▶</span>
+              <div class="video-progress"><i id="videoProgress"></i></div><span id="videoTime">01 / 04</span><span
+                class="video-hd">HD</span>
+            </div>
+            <div class="video-title"><span>SHADOWFLOW IN MOTION</span><b id="videoCaption">Observe the work</b></div>
+          </div>
+          <div class="video-caption-bottom"><span><i></i> A workflow shaped around the way your team
+              works</span><span>SCROLL TO PLAY &nbsp; ↓</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="values-section" id="built-for-people">
+      <div class="section-eyebrow"><i></i> AUTOMATION THAT FEELS HUMAN</div>
+      <h2>More flow. Still your call.</h2>
+      <p class="values-intro">ShadowFlow helps with the repetition and leaves important decisions in human hands.</p>
+      <div class="value-cards">
+        <article><span class="value-icon value-violet">⌕</span><b>Understands the steps</b>
+          <p>It turns actions into a workflow you can read and shape.</p>
+        </article>
+        <article><span class="value-icon value-mint">☷</span><b>Stops when unsure</b>
+          <p>Missing details and uncertain matches are flagged for review.</p>
+        </article>
+        <article><span class="value-icon value-peach">✓</span><b>Runs with your approval</b>
+          <p>Test in a safe environment before choosing a batch to process.</p>
+        </article>
+      </div>
+      <div class="final-cta">
+        <div>
+          <div class="section-eyebrow"><i></i> READY WHEN YOU ARE</div>
+          <h2>Let your best process<br>do more of the work.</h2>
+        </div><a href="workflow_builder.html" class="primary-cta">Step into ShadowFlow <span>↗</span></a>
+        <div class="cta-orbit"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="intro-footer"><a class="intro-brand" href="/templates/index.html"><span
+        class="brand-mark"><i></i><i></i><i></i><i></i></span>shadow<span>flow</span></a><span>Good work deserves a
+      smoother way.</span><a href="/templates/workflow_builder.html">Open workspace ↗</a></footer>
+  <script src="/static/js/intro.js"></script>
+</body>
+
+</html>

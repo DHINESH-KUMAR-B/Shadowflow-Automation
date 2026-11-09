@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fb">
+  <title>Review queue · ShadowFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/app.css">
+  
+</head>
+
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="/templates/dashboard.html"><span
+          class="brand-mark"><i></i><i></i><i></i><i></i></span><span>shadow<span
+            class="brand-light">flow</span></span></a>
+      <div class="workspace-switch">
+        <div class="workspace-avatar">N</div>
+        <div class="workspace-copy"><b>Northstar College</b><small>Workspace</small></div><span class="chevron">⌄</span>
+      </div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="nav-list">
+        <a class="nav-link " href="/templates/dashboard.html"><span
+            class="nav-icon">▦</span>Overview</a>
+        <a class="nav-link " href="/templates/record.html"><span
+            class="nav-icon">◎</span>Record a task</a>
+        <a class="nav-link " href="/templates/workflow_builder.html"><span
+            class="nav-icon">⌘</span>Workflows</a>
+        <a class="nav-link " href="/templates/execution.html"><span
+            class="nav-icon">▷</span>Executions</a>
+        <a class="nav-link " href="/templates/history.html"><span
+            class="nav-icon">◷</span>History</a>
+      </nav>
+      <div class="nav-label nav-label-spaced">MANAGE</div>
+      <a class="nav-link" href="/templates/review.html"><span class="nav-icon">☷</span>Review queue<span
+          class="nav-count">3</span></a>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-spark">✳</span><b>Need a hand?</b>
+          <p>Learn how to build your first workflow.</p><a href="/templates/workflow_builder.html">Explore the guide
+            <span>↗</span></a>
+        </div>
+        <div class="profile">
+          <div class="profile-avatar">X</div>
+          <div class="profile-info"><b>Vision X</b><small>Administrator</small></div><span class="dots">···</span>
+        </div>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">☰</button>
+        <div class="breadcrumbs"><span>Workspace</span><span class="crumb-slash">/</span><b>Review queue</b></div>
+        <div class="top-actions"><span class="environment"><i></i> Demo environment</span><button class="icon-button"
+            aria-label="Notifications">♧<b class="notification-dot"></b></button>
+          <div class="top-avatar">DK</div>
+        </div>
+      </header>
+      <div class="page-content"><section class="page-heading-row">
+    <div>
+        <div class="eyebrow"><span class="eyebrow-line"></span> HUMAN IN THE LOOP</div>
+        <h1>A little help from you.</h1>
+        <p class="page-subtitle">ShadowFlow paused when it wasn’t sure. Take a look and choose what happens next.</p>
+    </div><span class="review-count-pill"><span>3</span> ITEMS NEED YOUR EYES</span>
+</section>
+<div class="review-summary">
+    <div class="review-summary-icon">☷</div>
+    <div><b>Everything is safely paused.</b>
+        <p>These records won’t be updated or skipped until you decide. Your workflow will continue with the remaining
+            records.</p>
+    </div><a href="/templates/execution.html" class="text-link">See this run <span>→</span></a>
+</div>
+<div class="review-list"><article class="review-card">
+        <div class="review-card-head">
+            <div
+                class="review-alert-icon alert-warn">
+                !</div>
+            <div class="review-card-title">
+                <div><span class="review-type">MISSING INFORMATION</span>
+                    <h3>Kabir Rao <span>NS-2026-0157</span></h3>
+                </div><span class="review-paused">● Paused</span>
+            </div>
+        </div>
+        <div class="review-details">
+            <div><small>DEPARTMENT</small><b>CSE</b></div>
+            <div><small>EMAIL</small><b class="missing-value">—</b>
+            </div>
+            <div><small>WHAT HAPPENED</small><b>Required email is missing</b></div>
+        </div>
+        <div class="review-explanation"><span>✦</span>
+            <p>A confirmation needs an email address. ShadowFlow left this record
+                untouched so you can fill in the missing detail or skip it.</p>
+        </div>
+        <div class="review-card-actions"><button class="button button-outline"
+                data-toast="Record skipped. The workflow will continue safely.">Skip this record</button><button
+                class="button button-outline" data-toast="Record marked for follow-up.">Flag for later</button><button
+                class="button button-dark" data-toast="Review saved. The workflow can resume.">Resolve & continue
+                <span>→</span></button></div>
+    </article><article class="review-card">
+        <div class="review-card-head">
+            <div
+                class="review-alert-icon alert-warn">
+                !</div>
+            <div class="review-card-title">
+                <div><span class="review-type">MISSING INFORMATION</span>
+                    <h3>Rohan Das <span>NS-2026-0171</span></h3>
+                </div><span class="review-paused">● Paused</span>
+            </div>
+        </div>
+        <div class="review-details">
+            <div><small>DEPARTMENT</small><b>ECE</b></div>
+            <div><small>EMAIL</small><b class="missing-value">—</b>
+            </div>
+            <div><small>WHAT HAPPENED</small><b>Required email is missing</b></div>
+        </div>
+        <div class="review-explanation"><span>✦</span>
+            <p>A confirmation needs an email address. ShadowFlow left this record
+                untouched so you can fill in the missing detail or skip it.</p>
+        </div>
+        <div class="review-card-actions"><button class="button button-outline"
+                data-toast="Record skipped. The workflow will continue safely.">Skip this record</button><button
+                class="button button-outline" data-toast="Record marked for follow-up.">Flag for later</button><button
+                class="button button-dark" data-toast="Review saved. The workflow can resume.">Resolve & continue
+                <span>→</span></button></div>
+    </article><article class="review-card">
+        <div class="review-card-head">
+            <div
+                class="review-alert-icon alert-violet">
+                ⌕</div>
+            <div class="review-card-title">
+                <div><span class="review-type">MATCH
+                        NOT FOUND</span>
+                    <h3>Dev Patel <span>NS-2026-0188</span></h3>
+                </div><span class="review-paused">● Paused</span>
+            </div>
+        </div>
+        <div class="review-details">
+            <div><small>DEPARTMENT</small><b>CSE</b></div>
+            <div><small>EMAIL</small><b class="">dev@northstar.edu</b>
+            </div>
+            <div><small>WHAT HAPPENED</small><b>No portal match for this student ID</b></div>
+        </div>
+        <div class="review-explanation"><span>✦</span>
+            <p>No exact student ID match appeared
+                in the demo portal. ShadowFlow won’t choose a similar name on your behalf.</p>
+        </div>
+        <div class="review-card-actions"><button class="button button-outline"
+                data-toast="Record skipped. The workflow will continue safely.">Skip this record</button><button
+                class="button button-outline" data-toast="Record marked for follow-up.">Flag for later</button><button
+                class="button button-dark" data-toast="Review saved. The workflow can resume.">Resolve & continue
+                <span>→</span></button></div>
+    </article></div>
+<div class="review-footnote">✧ &nbsp; Every decision is recorded in the execution log.</div><footer class="site-footer"><span>© 2026
+            ShadowFlow</span><span><i class="status-pulse"></i> All systems operational</span><span>Built for work that
+            flows.</span></footer>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="/static/js/app.js"></script>
+  
+</body>
+
+</html>

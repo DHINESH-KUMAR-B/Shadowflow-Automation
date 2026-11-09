@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fb">
+  <title>Record a task · ShadowFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/app.css">
+  
+</head>
+
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="/templates/dashboard.html"><span
+          class="brand-mark"><i></i><i></i><i></i><i></i></span><span>shadow<span
+            class="brand-light">flow</span></span></a>
+      <div class="workspace-switch">
+        <div class="workspace-avatar">N</div>
+        <div class="workspace-copy"><b>Northstar College</b><small>Workspace</small></div><span class="chevron">⌄</span>
+      </div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="nav-list">
+        <a class="nav-link " href="/templates/dashboard.html"><span
+            class="nav-icon">▦</span>Overview</a>
+        <a class="nav-link active" href="/templates/record.html"><span
+            class="nav-icon">◎</span>Record a task</a>
+        <a class="nav-link " href="/templates/workflow_builder.html"><span
+            class="nav-icon">⌘</span>Workflows</a>
+        <a class="nav-link " href="/templates/execution.html"><span
+            class="nav-icon">▷</span>Executions</a>
+        <a class="nav-link " href="/templates/history.html"><span
+            class="nav-icon">◷</span>History</a>
+      </nav>
+      <div class="nav-label nav-label-spaced">MANAGE</div>
+      <a class="nav-link" href="/templates/review.html"><span class="nav-icon">☷</span>Review queue<span
+          class="nav-count">3</span></a>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-spark">✳</span><b>Need a hand?</b>
+          <p>Learn how to build your first workflow.</p><a href="/templates/workflow_builder.html">Explore the guide
+            <span>↗</span></a>
+        </div>
+        <div class="profile">
+          <div class="profile-avatar">X</div>
+          <div class="profile-info"><b>Vision X</b><small>Administrator</small></div><span class="dots">···</span>
+        </div>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">☰</button>
+        <div class="breadcrumbs"><span>Workspace</span><span class="crumb-slash">/</span><b>Record a task</b></div>
+        <div class="top-actions"><span class="environment"><i></i> Demo environment</span><button class="icon-button"
+            aria-label="Notifications">♧<b class="notification-dot"></b></button>
+          <div class="top-avatar">DK</div>
+        </div>
+      </header>
+      <div class="page-content"><section class="page-heading-row">
+    <div>
+        <div class="eyebrow"><span class="eyebrow-line"></span> TEACH SHADOWFLOW</div>
+        <h1>Show us how it’s done.</h1>
+        <p class="page-subtitle">Complete a task once. We’ll turn your steps into a workflow you can review and reuse.
+        </p>
+    </div><span class="safe-pill"><i></i> Safe demo environment</span>
+</section>
+<div class="record-layout">
+    <section class="panel record-panel">
+        <div class="panel-title-row">
+            <div><span class="step-overline">STEP 01 · PREPARE</span>
+                <h2>Set up your recording</h2>
+                <p>Choose a name and tell us what you’re teaching.</p>
+            </div><span class="record-step-badge">1 of 3</span>
+        </div><label class="field-label" for="taskName">What should we call this task?</label><input class="text-field"
+            id="taskName" value="Student application intake" placeholder="e.g. Process new applications"><label
+            class="field-label field-gap" for="taskDescription">What are you trying to accomplish?</label><textarea
+            class="text-field textarea" id="taskDescription"
+            placeholder="A sentence about the task you want to automate…">Review each student application, update their portal status, and prepare a confirmation.</textarea>
+        <div class="record-divider"></div>
+        <div class="environment-row"><span class="environment-icon">▣</span>
+            <div><b>ShadowFlow demo portal</b><small>A contained sample site. Your real accounts and data stay
+                    untouched.</small></div><span class="selected-check">✓</span>
+        </div>
+        <div class="record-tip"><span>✦</span>
+            <p><b>A good demo is a small one.</b> Show one typical record from start to finish. We’ll help you think
+                through the exceptions afterward.</p>
+        </div><button class="button button-dark button-wide" id="startRecording"><span class="record-button-dot"></span>
+            Start recording <span class="button-end">→</span></button>
+        <div class="privacy-note">⌑ &nbsp; You can pause or stop the recording at any time.</div>
+    </section>
+    <aside class="panel guide-panel">
+        <div class="guide-art">
+            <div class="guide-window">
+                <div class="guide-window-top"><i></i><i></i><i></i><span>demo.portal / applications</span></div>
+                <div class="guide-window-body">
+                    <div class="guide-nav-line"></div>
+                    <div class="guide-head-line"></div>
+                    <div class="guide-data-row"><i></i><span></span><span></span></div>
+                    <div class="guide-data-row"><i></i><span></span><span></span></div>
+                    <div class="guide-cursor">↖</div>
+                </div>
+            </div>
+            <div class="guide-orb"></div>
+        </div>
+        <div class="guide-content">
+            <div class="eyebrow">YOUR FIRST RECORDING</div>
+            <h3>Three little things<br>make a great demo.</h3>
+            <div class="guide-list">
+                <div><span>01</span>
+                    <p><b>Show the usual path</b><small>Walk through a straightforward example.</small></p><i>✓</i>
+                </div>
+                <div><span>02</span>
+                    <p><b>Say what matters</b><small>Point out details that guide your decisions.</small></p><i>✓</i>
+                </div>
+                <div><span>03</span>
+                    <p><b>Review before running</b><small>You’re always the one in control.</small></p><i>✓</i>
+                </div>
+            </div><a class="text-link" href="/templates/workflow_builder.html">Take the quick tour <span>↗</span></a>
+        </div>
+    </aside>
+</div>
+<section class="recording-active panel hidden" id="recordingActive">
+    <div class="recording-live"><span class="recording-live-dot"></span> RECORDING IN PROGRESS <span
+            id="recordTimer">00:00</span></div>
+    <h2>Your demo is ready.</h2>
+    <p>In a full setup, the demo portal opens here while ShadowFlow captures your permitted actions.</p>
+    <div class="demo-preview">
+        <div class="demo-preview-top"><span>ShadowFlow Demo Portal</span><span class="demo-tag">SAMPLE DATA</span></div>
+        <div class="demo-preview-row"><span>Aarav Mehta</span><span>CSE</span><span>Application received</span><button
+                class="mini-edit">Update</button></div>
+        <div class="demo-preview-row"><span>Priya Sharma</span><span>ECE</span><span>Application received</span><button
+                class="mini-edit">Update</button></div>
+    </div>
+    <div class="record-actions"><button class="button button-outline" id="pauseRecording">Ⅱ &nbsp; Pause</button><a
+            href="/templates/review.html" class="button button-dark">Finish demo <span>→</span></a></div>
+</section>
+<footer class="site-footer"><span>© 2026
+            ShadowFlow</span><span><i class="status-pulse"></i> All systems operational</span><span>Built for work that
+            flows.</span></footer>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="/static/js/app.js"></script>
+  
+</body>
+
+</html>

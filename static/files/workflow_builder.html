@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fb">
+  <title>Workflow builder · ShadowFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  
+</head>
+
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="dashboard.html"><span
+          class="brand-mark"><i></i><i></i><i></i><i></i></span><span>shadow<span
+            class="brand-light">flow</span></span></a>
+      <div class="workspace-switch">
+        <div class="workspace-avatar">N</div>
+        <div class="workspace-copy"><b>Northstar College</b><small>Workspace</small></div><span class="chevron">⌄</span>
+      </div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="nav-list">
+        <a class="nav-link " href="dashboard.html"><span
+            class="nav-icon">▦</span>Overview</a>
+        <a class="nav-link " href="record.html"><span
+            class="nav-icon">◎</span>Record a task</a>
+        <a class="nav-link active" href="workflow_builder.html"><span
+            class="nav-icon">⌘</span>Workflows</a>
+        <a class="nav-link " href="execution.html"><span
+            class="nav-icon">▷</span>Executions</a>
+        <a class="nav-link " href="history.html"><span
+            class="nav-icon">◷</span>History</a>
+      </nav>
+      <div class="nav-label nav-label-spaced">MANAGE</div>
+      <a class="nav-link" href="review.html"><span class="nav-icon">☷</span>Review queue<span
+          class="nav-count">3</span></a>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-spark">✳</span><b>Need a hand?</b>
+          <p>Learn how to build your first workflow.</p><a href="workflow_builder.html">Explore the guide
+            <span>↗</span></a>
+        </div>
+        <div class="profile">
+          <div class="profile-avatar">DK</div>
+          <div class="profile-info"><b>Dhinesh Kumar</b><small>Administrator</small></div><span class="dots">···</span>
+        </div>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">☰</button>
+        <div class="breadcrumbs"><span>Workspace</span><span class="crumb-slash">/</span><b>Workflows / Builder</b></div>
+        <div class="top-actions"><span class="environment"><i></i> Demo environment</span><button class="icon-button"
+            aria-label="Notifications">♧<b class="notification-dot"></b></button>
+          <div class="top-avatar">DK</div>
+        </div>
+      </header>
+      <div class="page-content"><section class="builder-header">
+    <div><a class="back-link" href="dashboard.html">← &nbsp; All workflows</a>
+        <div class="builder-title-line">
+            <div>
+                <div class="eyebrow"><span class="eyebrow-line"></span> WORKFLOW BUILDER</div>
+                <h1>Student application intake</h1>
+                <p class="page-subtitle">A draft built from your demonstration. Make it yours.</p>
+            </div><span class="draft-pill"><i></i> Draft · unsaved changes</span>
+        </div>
+    </div>
+    <div class="builder-actions"><button class="button button-outline" data-toast="Changes saved as a draft">Save
+            draft</button><a class="button button-dark" href="review.html">Review workflow
+            <span>→</span></a></div>
+</section>
+<div class="builder-layout">
+    <section class="builder-canvas">
+        <div class="canvas-toolbar">
+            <div><span class="canvas-dot"></span> WORKFLOW CANVAS <span class="canvas-separator">·</span> 5 steps</div>
+            <div class="canvas-tools"><button aria-label="Zoom out">−</button><span>100%</span><button
+                    aria-label="Zoom in">＋</button><button aria-label="Fit">⛶</button></div>
+        </div>
+        <div class="flow-canvas">
+            <div class="flow-start"><span class="start-icon">▷</span>
+                <div><b>When a batch is started</b><small>Input: applications.csv</small></div><span
+                    class="start-edit">···</span>
+            </div>
+            <div class="flow-connector"><i></i></div>
+            <div class="flow-node"><span class="node-number">01</span><span class="node-icon node-purple">▤</span>
+                <div><b>Read application row</b><small>Extract name, email, department</small></div><button
+                    class="node-menu">···</button>
+            </div>
+            <div class="flow-connector"><i></i></div>
+            <div class="flow-node"><span class="node-number">02</span><span class="node-icon node-blue">⌕</span>
+                <div><b>Find student in portal</b><small>Match by student ID</small></div><button
+                    class="node-menu">···</button>
+            </div>
+            <div class="flow-connector branch-connector"><i></i></div>
+            <div class="condition-node">
+                <div class="condition-head"><span class="node-icon node-orange">◇</span>
+                    <div><b>Check department</b><small>Route based on row value</small></div><button
+                        class="node-menu">···</button>
+                </div>
+                <div class="condition-branches">
+                    <div><span class="branch-tag">CSE</span><span>Engineering process</span><span
+                            class="branch-arrow">→</span></div>
+                    <div><span class="branch-tag branch-tag-blue">ECE</span><span>Electronics process</span><span
+                            class="branch-arrow">→</span></div>
+                </div>
+            </div>
+            <div class="flow-connector"><i></i></div>
+            <div class="flow-node"><span class="node-number">04</span><span class="node-icon node-green">✓</span>
+                <div><b>Update application status</b><small>Set status to “In review”</small></div><button
+                    class="node-menu">···</button>
+            </div>
+            <div class="flow-connector"></div>
+            <div class="flow-end"><span class="end-icon">✦</span>
+                <div><b>Log result & prepare confirmation</b><small>Record completion for each student</small></div>
+            </div><button class="add-step" data-toast="Step picker opened"><span>＋</span> Add a step</button>
+        </div>
+    </section>
+    <aside class="builder-inspector">
+        <div class="inspector-top"><span>WORKFLOW DETAILS</span><button class="node-menu">···</button></div>
+        <div class="inspector-icon">✳</div><label class="field-label">Workflow name</label><input class="text-field"
+            value="Student application intake"><label class="field-label field-gap">Description</label><textarea
+            class="text-field textarea small-textarea">Routes student applications by department, updates portal status, and records completion.</textarea>
+        <div class="inspector-rule"></div>
+        <div class="inspector-section-title">SAFETY & PERMISSIONS</div>
+        <div class="permission-item"><span class="permission-icon green">✓</span>
+            <div><b>Demo environment only</b><small>Actions stay inside the sample portal.</small></div><span
+                class="toggle on"></span>
+        </div>
+        <div class="permission-item"><span class="permission-icon violet">☷</span>
+            <div><b>Pause on uncertain matches</b><small>Ask for help instead of guessing.</small></div><span
+                class="toggle on"></span>
+        </div>
+        <div class="permission-item"><span class="permission-icon peach">✉</span>
+            <div><b>Prepare confirmations</b><small>Nothing is sent automatically.</small></div><span
+                class="toggle on"></span>
+        </div>
+        <div class="inspector-rule"></div>
+        <div class="inspector-section-title">INPUTS</div>
+        <div class="input-chip">▤ &nbsp; applications.csv <span>⋯</span></div><button class="add-input"
+            data-toast="Add an input file">＋ Add input</button>
+        <div class="canvas-note"><span>✦</span> This workflow has <b>2 safety checks</b> that pause for human review.
+        </div>
+    </aside>
+</div>
+<footer class="site-footer"><span>© 2026
+            ShadowFlow</span><span><i class="status-pulse"></i> All systems operational</span><span>Built for work that
+            flows.</span></footer>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="js/app.js"></script>
+  
+</body>
+
+</html>

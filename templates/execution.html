@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fb">
+  <title>Execution · ShadowFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/app.css">
+  
+</head>
+
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="/templates/dashboard.html"><span
+          class="brand-mark"><i></i><i></i><i></i><i></i></span><span>shadow<span
+            class="brand-light">flow</span></span></a>
+      <div class="workspace-switch">
+        <div class="workspace-avatar">N</div>
+        <div class="workspace-copy"><b>Northstar College</b><small>Workspace</small></div><span class="chevron">⌄</span>
+      </div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="nav-list">
+        <a class="nav-link " href="/templates/dashboard.html"><span
+            class="nav-icon">▦</span>Overview</a>
+        <a class="nav-link " href="/templates/record.html"><span
+            class="nav-icon">◎</span>Record a task</a>
+        <a class="nav-link " href="/templates/workflow_builder.html"><span
+            class="nav-icon">⌘</span>Workflows</a>
+        <a class="nav-link active" href="/templates/execution.html"><span
+            class="nav-icon">▷</span>Executions</a>
+        <a class="nav-link " href="/templates/history.html"><span
+            class="nav-icon">◷</span>History</a>
+      </nav>
+      <div class="nav-label nav-label-spaced">MANAGE</div>
+      <a class="nav-link" href="/templates/review.html"><span class="nav-icon">☷</span>Review queue<span
+          class="nav-count">3</span></a>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-spark">✳</span><b>Need a hand?</b>
+          <p>Learn how to build your first workflow.</p><a href="/templates/workflow_builder.html">Explore the guide
+            <span>↗</span></a>
+        </div>
+        <div class="profile">
+          <div class="profile-avatar">X</div>
+          <div class="profile-info"><b>Vision X</b><small>Administrator</small></div><span class="dots">···</span>
+        </div>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">☰</button>
+        <div class="breadcrumbs"><span>Workspace</span><span class="crumb-slash">/</span><b>Executions / Student intake</b></div>
+        <div class="top-actions"><span class="environment"><i></i> Demo environment</span><button class="icon-button"
+            aria-label="Notifications">♧<b class="notification-dot"></b></button>
+          <div class="top-avatar">DK</div>
+        </div>
+      </header>
+      <div class="page-content"><section class="execution-heading">
+    <div><a class="back-link" href="/templates/history.html">← &nbsp; All executions</a>
+        <div class="eyebrow"><span class="eyebrow-line"></span> WORKFLOW RUN</div>
+        <h1>Student application intake</h1>
+        <p class="page-subtitle">Started today at 10:42 AM · Run ID <span class="mono">RUN-10924</span></p>
+    </div><span class="execution-state"><i></i> Completed with review</span>
+</section>
+<section class="execution-hero">
+    <div class="execution-hero-copy"><span class="execution-check">✓</span>
+        <div>
+            <div class="eyebrow">YOUR WORKFLOW IS FINISHED</div>
+            <h2>Nice work. The rest is in your hands.</h2>
+            <p>21 student records were updated. Two were safely paused for you to review.</p>
+        </div>
+    </div>
+    <div class="execution-actions"><a class="button button-light" href="/templates/review.html">Review 2 records
+            <span>→</span></a><button class="button button-ghost-light" data-toast="Run report prepared for download">↓
+            Export report</button></div>
+    <div class="execution-wave"></div>
+</section>
+<section class="run-metrics">
+    <article><span>RECORDS IN BATCH</span><b>24</b><small>Applications.csv</small></article>
+    <article><span>COMPLETED</span><b class="run-green">21 <i>↗</i></b><small>Updated successfully</small></article>
+    <article><span>NEEDS REVIEW</span><b class="run-amber">02</b><small>Paused for your decision</small></article>
+    <article><span>UNMATCHED</span><b>01</b><small>Kept unchanged</small></article>
+</section>
+<section class="execution-content">
+    <div class="section-heading">
+        <div>
+            <div class="eyebrow">RECORD BY RECORD</div>
+            <h2>Here’s how it went</h2>
+        </div>
+        <div class="filter-control"><span>All records</span><span>⌄</span></div>
+    </div>
+    <div class="record-table-wrap">
+        <table class="record-table">
+            <thead>
+                <tr>
+                    <th>STUDENT</th>
+                    <th>DEPARTMENT</th>
+                    <th>EMAIL</th>
+                    <th>RESULT</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody><tr>
+                    <td><b>Aarav Mehta</b><small>NS-2026-0142</small></td>
+                    <td><span class="dept-badge">CSE</span></td>
+                    <td>aarav@northstar.edu</td>
+                    <td><span
+                            class="table-status table-done"><i></i>Updated</span></td>
+                    <td><button class="row-more" aria-label="More actions">···</button></td>
+                </tr><tr>
+                    <td><b>Kabir Rao</b><small>NS-2026-0157</small></td>
+                    <td><span class="dept-badge">CSE</span></td>
+                    <td>—</td>
+                    <td><span
+                            class="table-status table-review"><i></i>Needs review</span></td>
+                    <td><button class="row-more" aria-label="More actions">···</button></td>
+                </tr><tr>
+                    <td><b>Priya Sharma</b><small>NS-2026-0163</small></td>
+                    <td><span class="dept-badge">ECE</span></td>
+                    <td>priya@northstar.edu</td>
+                    <td><span
+                            class="table-status table-done"><i></i>Updated</span></td>
+                    <td><button class="row-more" aria-label="More actions">···</button></td>
+                </tr><tr>
+                    <td><b>Rohan Das</b><small>NS-2026-0171</small></td>
+                    <td><span class="dept-badge">ECE</span></td>
+                    <td>—</td>
+                    <td><span
+                            class="table-status table-review"><i></i>Needs review</span></td>
+                    <td><button class="row-more" aria-label="More actions">···</button></td>
+                </tr><tr>
+                    <td><b>Dev Patel</b><small>NS-2026-0188</small></td>
+                    <td><span class="dept-badge">CSE</span></td>
+                    <td>dev@northstar.edu</td>
+                    <td><span
+                            class="table-status table-missed"><i></i>Not matched</span></td>
+                    <td><button class="row-more" aria-label="More actions">···</button></td>
+                </tr></tbody>
+        </table>
+        <div class="table-footer">Showing 5 of 24 records <span>‹ &nbsp; 1 &nbsp; 2 &nbsp; 3 &nbsp; … &nbsp; 5 &nbsp;
+                ›</span></div>
+    </div>
+</section>
+<section class="execution-log">
+    <div class="section-heading">
+        <div>
+            <div class="eyebrow">TRACEABLE BY DESIGN</div>
+            <h2>Execution log</h2>
+        </div><a href="/templates/history.html" class="text-link">Full history <span>→</span></a>
+    </div>
+    <div class="log-card">
+        <div><span class="log-icon log-start">▷</span>
+            <p><b>Batch started</b><small>Read 24 rows from Applications.csv</small></p><time>10:42:06</time><span
+                class="log-ok">● Done</span>
+        </div>
+        <div><span class="log-icon log-route">◇</span>
+            <p><b>Department routing complete</b><small>14 CSE · 10 ECE applications</small></p>
+            <time>10:42:09</time><span class="log-ok">● Done</span>
+        </div>
+        <div><span class="log-icon log-pause">Ⅱ</span>
+            <p><b>2 records paused for review</b><small>Missing email · unmatched student ID</small></p>
+            <time>10:42:32</time><span class="log-review">● Review</span>
+        </div>
+        <div><span class="log-icon log-end">✓</span>
+            <p><b>Batch finished</b><small>21 updated · 2 paused · 1 unchanged</small></p><time>10:42:36</time><span
+                class="log-ok">● Done</span>
+        </div>
+    </div>
+</section><footer class="site-footer"><span>© 2026
+            ShadowFlow</span><span><i class="status-pulse"></i> All systems operational</span><span>Built for work that
+            flows.</span></footer>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="/static/js/app.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fb">
+  <title>Execution history · ShadowFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/app.css">
+  
+</head>
+
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="/templates/dashboard.html"><span
+          class="brand-mark"><i></i><i></i><i></i><i></i></span><span>shadow<span
+            class="brand-light">flow</span></span></a>
+      <div class="workspace-switch">
+        <div class="workspace-avatar">N</div>
+        <div class="workspace-copy"><b>Northstar College</b><small>Workspace</small></div><span class="chevron">⌄</span>
+      </div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="nav-list">
+        <a class="nav-link " href="/templates/dashboard.html"><span
+            class="nav-icon">▦</span>Overview</a>
+        <a class="nav-link " href="/templates/record.html"><span
+            class="nav-icon">◎</span>Record a task</a>
+        <a class="nav-link " href="/templates/workflow_builder.html"><span
+            class="nav-icon">⌘</span>Workflows</a>
+        <a class="nav-link " href="/templates/execution.html"><span
+            class="nav-icon">▷</span>Executions</a>
+        <a class="nav-link active" href="/templates/history.html"><span
+            class="nav-icon">◷</span>History</a>
+      </nav>
+      <div class="nav-label nav-label-spaced">MANAGE</div>
+      <a class="nav-link" href="/templates/review.html"><span class="nav-icon">☷</span>Review queue<span
+          class="nav-count">3</span></a>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-spark">✳</span><b>Need a hand?</b>
+          <p>Learn how to build your first workflow.</p><a href="/templates/workflow_builder.html">Explore the guide
+            <span>↗</span></a>
+        </div>
+        <div class="profile">
+          <div class="profile-avatar">X</div>
+          <div class="profile-info"><b>Vision X</b><small>Administrator</small></div><span class="dots">···</span>
+        </div>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">☰</button>
+        <div class="breadcrumbs"><span>Workspace</span><span class="crumb-slash">/</span><b>History</b></div>
+        <div class="top-actions"><span class="environment"><i></i> Demo environment</span><button class="icon-button"
+            aria-label="Notifications">♧<b class="notification-dot"></b></button>
+          <div class="top-avatar">DK</div>
+        </div>
+      </header>
+      <div class="page-content"><section class="page-heading-row">
+    <div>
+        <div class="eyebrow"><span class="eyebrow-line"></span> YOUR WORK, ACCOUNTED FOR</div>
+        <h1>Execution history.</h1>
+        <p class="page-subtitle">Every run, every record, every decision. All in one place.</p>
+    </div><a class="button button-dark" href="/templates/execution.html">▷ &nbsp; View latest run</a>
+</section>
+<section class="history-stats">
+    <div><span>TOTAL RUNS</span><b>42</b><small>Across 8 workflows</small></div>
+    <div><span>RECORDS PROCESSED</span><b>1,284</b><small class="green-text">↑ 12.8% this month</small></div>
+    <div><span>SUCCESS RATE</span><b>96.4%</b><small>1,238 updated safely</small></div>
+    <div><span>HUMAN DECISIONS</span><b>18</b><small>All resolved by your team</small></div>
+</section>
+<section class="history-panel">
+    <div class="history-toolbar">
+        <div>
+            <div class="eyebrow">RUN LOG</div>
+            <h2>Recent executions</h2>
+        </div>
+        <div class="history-filters"><button class="filter-control" data-toast="Workflow filter options">All workflows
+                <span>⌄</span></button><button class="filter-control" data-toast="Date range options">Last 30 days
+                <span>⌄</span></button><button class="filter-search" aria-label="Search">⌕</button></div>
+    </div>
+    <div class="record-table-wrap history-table-wrap">
+        <table class="record-table history-table">
+            <thead>
+                <tr>
+                    <th>WORKFLOW</th>
+                    <th>WHEN</th>
+                    <th>STARTED BY</th>
+                    <th>RECORDS</th>
+                    <th>OUTCOME</th>
+                    <th>STATUS</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody><tr>
+                    <td><b>Student application intake</b></td>
+                    <td>Today, 10:42 AM</td>
+                    <td><span class="owner-avatar">D</span> Dhinesh Kumar</td>
+                    <td><span class="record-count">24 total</span></td>
+                    <td><span class="outcome-count good">✓ 21</span> <span class="outcome-count review">! 2</span></td>
+                    <td><span
+                            class="history-status with-review"><i></i>Completed with review</span></td>
+                    <td><a href="/templates/execution.html" class="activity-arrow">↗</a></td>
+                </tr><tr>
+                    <td><b>Applicant status updates</b></td>
+                    <td>Yesterday, 4:15 PM</td>
+                    <td><span class="owner-avatar">D</span> Dhinesh Kumar</td>
+                    <td><span class="record-count">18 total</span></td>
+                    <td><span class="outcome-count good">✓ 18</span> <span class="outcome-count review">! 0</span></td>
+                    <td><span
+                            class="history-status "><i></i>Completed</span></td>
+                    <td><a href="/templates/execution.html" class="activity-arrow">↗</a></td>
+                </tr><tr>
+                    <td><b>Student application intake</b></td>
+                    <td>Nov 6, 11:08 AM</td>
+                    <td><span class="owner-avatar">M</span> Meera Nair</td>
+                    <td><span class="record-count">30 total</span></td>
+                    <td><span class="outcome-count good">✓ 27</span> <span class="outcome-count review">! 3</span></td>
+                    <td><span
+                            class="history-status with-review"><i></i>Completed with review</span></td>
+                    <td><a href="/templates/execution.html" class="activity-arrow">↗</a></td>
+                </tr><tr>
+                    <td><b>Missing document follow-up</b></td>
+                    <td>Nov 5, 2:30 PM</td>
+                    <td><span class="owner-avatar">D</span> Dhinesh Kumar</td>
+                    <td><span class="record-count">12 total</span></td>
+                    <td><span class="outcome-count good">✓ 7</span> <span class="outcome-count review">! 0</span></td>
+                    <td><span
+                            class="history-status stopped"><i></i>Stopped safely</span></td>
+                    <td><a href="/templates/execution.html" class="activity-arrow">↗</a></td>
+                </tr></tbody>
+        </table>
+    </div>
+    <div class="history-pagination"><span>Showing <b>4</b> of <b>42</b> runs</span>
+        <div><button>‹</button><button
+                class="current-page">1</button><button>2</button><button>3</button><span>…</span><button>11</button><button>›</button>
+        </div>
+    </div>
+</section>
+<div class="history-note"><span>◷</span>
+    <div><b>Looking for something older?</b><span>Execution logs are kept for 12 months and can be exported from any
+            run.</span></div><a href="/templates/execution.html">Open latest report ↗</a>
+</div><footer class="site-footer"><span>© 2026
+            ShadowFlow</span><span><i class="status-pulse"></i> All systems operational</span><span>Built for work that
+            flows.</span></footer>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="/static/js/app.js"></script>
+  
+</body>
+
+</html>
